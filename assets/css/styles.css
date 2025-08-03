@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -18,8 +18,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Montserrat", sans-serif;
-  --second-font: "Dancing Script", cursive;
+  --body-font: 'Montserrat', sans-serif;
+  --second-font: 'Dancing Script', cursive;
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -106,8 +106,8 @@ img {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 
-/*========== 
-	Color changes in some parts of 
+/*==========
+	Color changes in some parts of
 	the website, in dark theme
 ==========*/
 
@@ -212,7 +212,7 @@ img {
   }
 
   .nav__link::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 2px;
     background-color: var(--title-color);
@@ -242,6 +242,53 @@ img {
 /* Active link */
 
 /*=============== HOME ===============*/
+.home {
+  position: relative;
+}
+
+.home__bg,
+.home__blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.home__bg {
+  object-fit: cover;
+  object-position: center;
+}
+
+.home__blur {
+  background-color: var(--opacity-color-20);
+  backdrop-filter: blur(40px);
+  transition: background-color 0.4s;
+}
+
+.home__container {
+  position: relative;
+  padding-block: 2rem 3rem;
+  row-gap: 3rem;
+}
+
+.home__data {
+  text-align: center;
+  color: var(--white-color);
+}
+
+.home__title {
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  line-height: 110%;
+  margin-bottom: 1rem;
+}
+
+.home__description {
+  margin-bottom: 2rem;
+}
+
+/* pokračovat  19:19 */
 
 /* Swiper class */
 
