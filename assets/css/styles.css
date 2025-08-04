@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -18,8 +18,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Montserrat', sans-serif;
-  --second-font: 'Dancing Script', cursive;
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -212,7 +212,7 @@ img {
   }
 
   .nav__link::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background-color: var(--title-color);
@@ -298,6 +298,34 @@ img {
 /* Swiper class */
 
 /*=============== BUTTON ===============*/
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 0.5rem;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  padding: 1rem 2rem;
+  font-weight: var(--font-semi-bold);
+  border-radius: 0.5rem;
+  transition: background-color 0.4s;
+}
+
+.button i {
+  font-weight: initial;
+  font-size: 1.5rem;
+  transition: transoform 0.4s;
+}
+
+.button:hover i {
+  transform: translateX(0.5rem);
+}
+
+.button__opa-30 {
+  background-color: var(--opacity-color-30);
+}
+
+/* pokračovat 21:05 */
 
 /*=============== DESTINATION ===============*/
 
