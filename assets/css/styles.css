@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -18,8 +18,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Montserrat', sans-serif;
-  --second-font: 'Dancing Script', cursive;
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -212,7 +212,7 @@ img {
   }
 
   .nav__link::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background-color: var(--title-color);
@@ -238,7 +238,18 @@ img {
   top: 0;
 }
 /* Change background header */
+.bg-header {
+  background-color: var(--body-color);
+  box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.1);
+}
 
+.bg-header :is(.nav__logo, .nav__toggle, .nav__theme) {
+  color: var(--title-color);
+}
+
+.bg-header .nav__logo img {
+  filter: invert(100%);
+}
 /* Active link */
 
 /*=============== HOME ===============*/
@@ -325,7 +336,7 @@ img {
   background-color: var(--opacity-color-30);
 }
 /* ********************************************************************************* */
-/* pokračovat 27:00 */
+/* pokračovat 29:00 */
 /* ********************************************************************************* */
 
 /*=============== DESTINATION ===============*/
@@ -335,7 +346,7 @@ img {
 /* Swiper class */
 .home__swiper .swiper-button-prev::after,
 .home__swiper .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .home__swiper :is(.swiper-button-prev, .swiper-button-next) {
