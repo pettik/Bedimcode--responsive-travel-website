@@ -1,33 +1,33 @@
 /*=============== SHOW MENU ===============*/
-const navMenu = document.getElementById("nav-menu"),
-  navToggle = document.getElementById("nav-toggle"),
-  navClose = document.getElementById("nav-close");
+const navMenu = document.getElementById('nav-menu'),
+  navToggle = document.getElementById('nav-toggle'),
+  navClose = document.getElementById('nav-close');
 
 /* Menu show */
 if (navToggle) {
-  navToggle.addEventListener("click", () => {
-    navMenu.classList.add("show-menu");
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.add('show-menu');
   });
 }
 
 /* Menu hidden */
 if (navClose) {
-  navClose.addEventListener("click", () => {
-    navMenu.classList.remove("show-menu");
+  navClose.addEventListener('click', () => {
+    navMenu.classList.remove('show-menu');
   });
 }
 
 /*=============== REMOVE MENU MOBILE ===============*/
 
 /*=============== SWIPER HOME ===============*/
-const swiperHome = new Swiper(".home__swiper", {
+const swiperHome = new Swiper('.home__swiper', {
   loop: true,
-  slidesPerView: "auto",
+  slidesPerView: 'auto',
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
   },
 
   autoplay: {
@@ -37,14 +37,28 @@ const swiperHome = new Swiper(".home__swiper", {
 });
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 const bgHeader = () => {
-  const header = document.getElementById("header");
+  const header = document.getElementById('header');
   this.scrollY >= 50
-    ? header.classList.add("bg-header")
-    : header.classList.remove("bg-header");
+    ? header.classList.add('bg-header')
+    : header.classList.remove('bg-header');
 };
-window.addEventListener("scroll", bgHeader);
+window.addEventListener('scroll', bgHeader);
 /*=============== SWIPER TESTIMONIAL ===============*/
+const swiperTestimonial = new Swiper('.testimonial__swiper', {
+  loop: true,
+  slidesPerView: 'auto',
 
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
 /*=============== SHOW SCROLL UP ===============*/
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/

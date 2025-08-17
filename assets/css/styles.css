@@ -304,10 +304,33 @@ img {
   border-radius: 1.5rem;
 }
 
-/* pokračovat  19:19 */
-
 /* Swiper class */
+.home__swiper .swiper-button-prev::after,
+.home__swiper .swiper-button-next::after {
+  content: '';
+}
 
+.home__swiper :is(.swiper-button-prev, .swiper-button-next) {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  background-color: var(--opacity-color-30);
+  backdrop-filter: blur(24px);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.25rem;
+  top: initial;
+  bottom: 1.25rem;
+  transition: background-color 0.4s;
+}
+
+.home__swiper .swiper-button-prev {
+  left: initial;
+  right: 4rem;
+}
+
+.home__swiper .swiper-button-next {
+  right: 1.25rem;
+}
 /*=============== BUTTON ===============*/
 .button {
   display: inline-flex;
@@ -394,10 +417,6 @@ img {
   transform: scale(1.2);
 }
 
-/* ********************************************************************************* */
-/* pokračovat 31:25 */
-/* ********************************************************************************* */
-
 /*=============== TESTIMONIAL ===============*/
 .testimonial__container {
   justify-content: center;
@@ -417,33 +436,42 @@ img {
   transition: background-color 0.4s;
 }
 
+.testimonial__card {
+  padding: 2.5rem 2rem 3rem 1.2rem;
+}
+
+.testimonial__title {
+  font-size: var(--h2-font-size);
+  color: var(--title-color);
+  margin-bottom: 0.75rem;
+}
+
+.testimonial__description {
+  margin-bottom: 1.5rem;
+}
+
+.testimonial__profile {
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.testimonial__profile img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.testimonial__info h3 {
+  font-size: var(--normal-font-size);
+  color: var(--title-color);
+  margin-bottom: 0.25rem;
+}
+
+.testimonial__info p {
+  font-size: var(--small-font-size);
+}
+
 /* Swiper class */
-.home__swiper .swiper-button-prev::after,
-.home__swiper .swiper-button-next::after {
-  content: '';
-}
-
-.home__swiper :is(.swiper-button-prev, .swiper-button-next) {
-  color: var(--white-color);
-  font-size: 1.5rem;
-  background-color: var(--opacity-color-30);
-  backdrop-filter: blur(24px);
-  width: 2rem;
-  height: 2rem;
-  border-radius: 0.25rem;
-  top: initial;
-  bottom: 1.25rem;
-  transition: background-color 0.4s;
-}
-
-.home__swiper .swiper-button-prev {
-  left: initial;
-  right: 4rem;
-}
-
-.home__swiper .swiper-button-next {
-  right: 1.25rem;
-}
 
 /*=============== GALLERY ===============*/
 
