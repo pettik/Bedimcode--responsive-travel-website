@@ -404,6 +404,19 @@ img {
   gap: 0;
 }
 
+.testimonial__img {
+  width: 300px;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.testimonial__swiper {
+  max-width: 300px;
+  background-color: var(--container-color);
+  border-radius: 0 0 1.5rem 1.5rem;
+  margin-inline: initial;
+  transition: background-color 0.4s;
+}
+
 /* Swiper class */
 .home__swiper .swiper-button-prev::after,
 .home__swiper .swiper-button-next::after {
