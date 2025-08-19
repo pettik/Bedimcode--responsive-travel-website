@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -18,8 +18,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Montserrat", sans-serif;
-  --second-font: "Dancing Script", cursive;
+  --body-font: 'Montserrat', sans-serif;
+  --second-font: 'Dancing Script', cursive;
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -212,7 +212,7 @@ img {
   }
 
   .nav__link::after {
-    content: "";
+    content: '';
     width: 0%;
     height: 2px;
     background-color: var(--title-color);
@@ -307,7 +307,7 @@ img {
 /* Swiper class */
 .home__swiper .swiper-button-prev::after,
 .home__swiper .swiper-button-next::after {
-  content: "";
+  content: '';
 }
 
 .home__swiper :is(.swiper-button-prev, .swiper-button-next) {
@@ -475,7 +475,7 @@ img {
 
 .testimonial__swiper .swiper-button-prev::after,
 .testimonial__swiper .swiper-button-next::after {
-  content: "";
+  content: '';
 }
 
 .testimonial__swiper :is(.swiper-button-prev, .swiper-button-next) {
@@ -483,6 +483,14 @@ img {
   font-size: 1.5rem;
   top: initial;
   bottom: 1.25rem;
+}
+
+.testimonial__swiper .swiper-button-prev {
+  left: initial;
+  right: 3.5rem;
+}
+.testimonial__swiper .swiper-button-next {
+  right: 1.25rem;
 }
 
 /*=============== GALLERY ===============*/

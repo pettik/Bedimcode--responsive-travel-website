@@ -23,6 +23,7 @@ if (navClose) {
 const swiperHome = new Swiper('.home__swiper', {
   loop: true,
   slidesPerView: 'auto',
+  grabCursor: true,
 
   // Navigation arrows
   navigation: {
@@ -47,6 +48,8 @@ window.addEventListener('scroll', bgHeader);
 const swiperTestimonial = new Swiper('.testimonial__swiper', {
   loop: true,
   slidesPerView: 'auto',
+  spaceBetween: 48,
+  grabCursor: true,
 
   // Navigation arrows
   navigation: {
@@ -55,7 +58,7 @@ const swiperTestimonial = new Swiper('.testimonial__swiper', {
   },
 
   autoplay: {
-    delay: 2500,
+    delay: 3000,
     disableOnInteraction: false,
   },
 });
