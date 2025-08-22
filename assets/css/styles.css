@@ -494,7 +494,24 @@ img {
 }
 
 /*=============== GALLERY ===============*/
+.gallery__container {
+  grid-template-columns: 300px;
+  justify-content: center;
+}
 
+.gallery__card {
+  position: relative;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.gallery__shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 /*=============== JOIN ===============*/
 
 /*=============== FOOTER ===============*/
