@@ -729,10 +729,16 @@ img {
 @media screen and (min-width: 576px) {
   .home__container,
   .about__container,
+  .destination__container,
   .explore__content,
   .join__container {
-    grid-template-columns: 380px;
     justify-content: center;
+    grid-template-columns: 380px;
+    margin: 1rem auto;
+  }
+
+  .container {
+    margin: 0 auto;
   }
 
   .footer__data {
