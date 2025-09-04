@@ -243,7 +243,7 @@ img {
   box-shadow: 0 8px 16px hsla(0, 0%, 0%, 0.1);
 }
 
-.bg-header :is(.nav__logo, .nav__toggle, .nav__theme) {
+.bg-header :is(.nav__logo, .nav__toggle, .nav__link, .nav__theme) {
   color: var(--title-color);
 }
 
@@ -795,10 +795,18 @@ img {
     display: none;
   }
   .nav__list {
+    display: flex;
     flex-direction: row;
     column-gap: 4rem;
     text-align: initial;
   }
+
+  .nav__link {
+    position: relative;
+    font-weight: var(--font-semi-bold);
+    color: var(--white-color);
+  }
+
   .popular__container {
     grid-template-columns: repeat(3, 240px);
   }
