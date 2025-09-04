@@ -797,8 +797,8 @@ img {
   .nav__list {
     flex-direction: row;
     column-gap: 4rem;
+    text-align: initial;
   }
-
   .popular__container {
     grid-template-columns: repeat(3, 240px);
   }
