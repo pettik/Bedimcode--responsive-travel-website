@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@100..900&display=swap");
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -18,8 +18,8 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Montserrat', sans-serif;
-  --second-font: 'Dancing Script', cursive;
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Dancing Script", cursive;
   --biggest-font-size: 3rem;
   --big-font-size: 1.5rem;
   --h1-font-size: 1.5rem;
@@ -106,10 +106,38 @@ img {
 /*=============== THEME ===============*/
 /*========== Variables Dark theme ==========*/
 
+.dark-theme {
+  --title-color: hsl(220, 8%, 90%);
+  --text-color: hsl(220, 8%, 70%);
+  --body-color: hsl(220, 8%, 8%);
+  --container-color: hsl(216, 38%, 5%);
+  --opacity-color-30: hsla(0, 0%, 15%, 0.3);
+  --opacity-color-20: hsla(0, 0%, 15%, 0.2);
+}
 /*==========
 	Color changes in some parts of
 	the website, in dark theme
 ==========*/
+
+.dark-theme .bg-header .nav__logo img {
+  filter: initial;
+}
+
+.dark-theme .bg-header {
+  box-shadow: 0 8px 16px hsla(0, 0%0%, 0.4);
+}
+
+.dark-theme .scrollup {
+  background-color: var(--container-color);
+}
+
+.dark-theme::-webkit-scrollbar {
+  background-color: hsl(220, 6%, 15%);
+}
+
+.dark-theme::-webkit-scrollbar-thumb {
+  background-color: hsl(220, 6%, 45%);
+}
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .container {
@@ -212,7 +240,7 @@ img {
   }
 
   .nav__link::after {
-    content: '';
+    content: "";
     width: 0%;
     height: 2px;
     background-color: var(--title-color);
@@ -307,7 +335,7 @@ img {
 /* Swiper class */
 .home__swiper .swiper-button-prev::after,
 .home__swiper .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .home__swiper :is(.swiper-button-prev, .swiper-button-next) {
@@ -475,7 +503,7 @@ img {
 
 .testimonial__swiper .swiper-button-prev::after,
 .testimonial__swiper .swiper-button-next::after {
-  content: '';
+  content: "";
 }
 
 .testimonial__swiper :is(.swiper-button-prev, .swiper-button-next) {
